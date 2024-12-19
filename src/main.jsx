@@ -1,7 +1,6 @@
 import {createRoot} from 'react-dom/client';
 
-
-const saludo = <h1>Hola Mundo</h1>;
+import { HelloWorldApp } from './HelloWorldApp';
 
 const root = createRoot(document.getElementById('root'));
-root.render(saludo);
+root.render(<HelloWorldApp/>);
