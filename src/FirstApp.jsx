@@ -1,11 +1,11 @@
-const newMessage = {
-    message: 'Hola Mundo',
-    title: 'Fernando'
-};  //Forma parte del componente, no está definido en el ámbito global
+const getResult = (a, b) =>{
+    return a+b;
+}
 export const FirstApp = () => {
     return ( //Fragmentos
         <> 
-            <code>{ JSON.stringify(newMessage) }</code>
+            <h1>{ getResult(3,4) }</h1>
+            {/*<code>{ JSON.stringify(newMessage) }</code>*/} 
             <p>Soy un subtítulo</p>
         </>
     );
